@@ -1,5 +1,5 @@
 bucket = "terraform-brk"
-key    = "roboshop-infra/${env}/terraform.tfstate"
+key    = "roboshop-infra/dev/terraform.tfstate"
 region = "us-east-1"
 
 
