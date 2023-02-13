@@ -1,4 +1,5 @@
 env = "dev"
+default_vpc_id = "vpc-072c42e4347721029"
 
 vpc = {
   main = {
