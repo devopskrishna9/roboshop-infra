@@ -11,7 +11,8 @@ module "vpc" {
 
   for_each = var.vpc
   cidr_block = each.value.cidr_block
-  subnets = each.value.subnets
+  public_subnets = each.value.public_subnets
+  private_subnets = each.value.private_subnets
   availability_zone = each.value.availability_zone
 }
 
@@ -32,6 +33,6 @@ module "vpc" {
 #  nat_gw = lookup(each.value, "nat_gw", false )
 #}
 
-#output "subnet_ids" {
-#  value = module.subnets
-#}
+output "out" {
+  value = module.vpc
+}
