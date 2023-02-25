@@ -62,6 +62,5 @@ elasticache = {
     node_type = "cache.t3.micro"
     num_node_groups = 2
     replicas_per_node_group = 1
-
   }
 }

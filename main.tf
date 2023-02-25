@@ -1,9 +1,3 @@
-#resource "null_resource" "test" {
-#  provisioner "local-exec" {
-#    command = "echo ${var.env}"
-#  }
-#}
-
 module "vpc" {
   source = "github.com/devopskrishna9/tf-module-vpc"
   env = var.env
