@@ -79,7 +79,7 @@ rabbitmq = {
 alb = {
   public = {
     vpc_name = "main"
-    subnet_type = "public_subnets_ids"
+    subnets_type = "public_subnets_ids"
     subnets_name = "public"
     internal = false
   }
