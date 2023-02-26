@@ -55,12 +55,23 @@ rds = {
   }
 }
 
-elasticache = {
+#elasticache = {
+#  main = {
+#    vpc_name = "main"
+#    subnets_name = "db"
+#    node_type = "cache.t3.micro"
+#    num_node_groups = 2
+#    replicas_per_node_group = 1
+#  }
+#}
+
+rabbitmq = {
   main = {
     vpc_name = "main"
     subnets_name = "db"
-    node_type = "cache.t3.micro"
-    num_node_groups = 2
-    replicas_per_node_group = 1
+    engine_type = "rabbitmq"
+    engine_version =  "3.10.10"
+    host_instance_type = "mq.t2.micro"
+    deployment_mode = "SINGLE_INSTANCE"
   }
 }
