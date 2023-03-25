@@ -98,8 +98,8 @@ module "apps" {
 
 }
 
-output "vpc" {
-  value = module.vpc
+output "redis" {
+  value = module.elasticache
 }
 
 
